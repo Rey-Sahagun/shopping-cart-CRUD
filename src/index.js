@@ -12,7 +12,7 @@ const typeDefs = mergeTypeDefs([productTypeDefs, userTypeDefs]);
 const resolvers = mergeResolvers([productResolvers, userResolvers]);
 
 const startServer = async () => {
-    await mongoose.connect('mongodb+srv://alcuevasal:12345@products.thkd3.mongodb.net/?retryWrites=true&w=majority&appName=products');
+    await mongoose.connect('mongodb+srv://carrito_compras:1234@serviciosweb.9h9fw.mongodb.net/?retryWrites=true&w=majority&appName=ServiciosWeb');
     const server = new ApolloServer({typeDefs, resolvers});
 
     server.listen().then(({url}) => {
